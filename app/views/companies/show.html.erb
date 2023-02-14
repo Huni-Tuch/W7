@@ -6,8 +6,15 @@
     <%= @company["name"] %> is located in the city of <%= @company["city"]%>, in the state of <%= @company["state"]%>
 </p>
 
+<ul>
+  <% for contact in @contacts %>
+    <li>
+      <%= contact["first_name"] %>
+      <%= contact["last_name"] %>
+    </li>
+  <% end %>
+</ul>
+
 <h2>
-
     <a href="/companies"> Back to all companies </a>
-
 </h2>

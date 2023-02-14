@@ -17,4 +17,10 @@ class PostsController < ApplicationController
     redirect_to "/posts"
   end
 
+  def destroy
+    #find post find_by
+    #post.destroy
+    #redirect_to "/posts"
+  end
+
 end
